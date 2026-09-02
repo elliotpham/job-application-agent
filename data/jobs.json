@@ -1,0 +1,74 @@
+[
+  {
+    "id": "job-001",
+    "title": "Senior Backend Java Engineer",
+    "company": "Example Cloud",
+    "description": "Build scalable backend services using Java, Spring Boot, Kafka, AWS, Docker, Kubernetes, REST APIs and microservices.",
+    "location": "Seattle, WA",
+    "remote": false,
+    "employment_type": "full-time",
+    "salary_min": 140000,
+    "salary_max": 175000,
+    "sponsorship": "Sponsorship available",
+    "company_size": "large",
+    "required_skills": [
+      "Java",
+      "Spring Boot",
+      "Kafka",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "RESTful APIs",
+      "Microservices Architecture"
+    ],
+    "preferred_skills": [
+      "GraphQL",
+      "Redis",
+      "Jenkins"
+    ]
+  },
+  {
+    "id": "job-002",
+    "title": "Frontend React Developer",
+    "company": "Example Startup",
+    "description": "Build React and TypeScript web applications. Strong frontend experience required.",
+    "location": "New York, NY",
+    "remote": false,
+    "employment_type": "full-time",
+    "salary_min": 100000,
+    "salary_max": 125000,
+    "sponsorship": "No sponsorship",
+    "company_size": "startup",
+    "required_skills": [
+      "React",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "preferred_skills": [
+      "Next.js"
+    ]
+  },
+  {
+    "id": "job-003",
+    "title": "Backend Software Engineer",
+    "company": "Example SaaS",
+    "description": "Develop backend services using Java and Spring Boot. Experience with AWS, REST APIs and databases preferred.",
+    "location": "Remote",
+    "remote": true,
+    "employment_type": "full-time",
+    "salary_min": 125000,
+    "salary_max": 160000,
+    "sponsorship": "Sponsorship available",
+    "company_size": "mid-size",
+    "required_skills": [
+      "Java",
+      "Spring Boot",
+      "RESTful APIs"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ]
+  }
+]

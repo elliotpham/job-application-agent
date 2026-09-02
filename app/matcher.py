@@ -34,12 +34,12 @@ def contains_skill(text: str, skill: str) -> bool:
 
     return False
 
-
 def calculate_skill_score(job: dict, profile: dict) -> tuple[int, list, list]:
     """
-    Score the candidate based on skills explicitly mentioned by the job.
+    Required skills determine the core technical score.
 
-    Required skills are weighted more heavily than preferred skills.
+    Preferred skills can increase the score when present,
+    but missing preferred skills never reduce it.
     """
 
     required_skills = job.get("required_skills", [])
@@ -64,30 +64,37 @@ def calculate_skill_score(job: dict, profile: dict) -> tuple[int, list, list]:
         if contains_skill(job_text, skill):
             matched_preferred.append(skill)
 
-    # Required skills = 70% of technical score
-    # Preferred skills = 30% of technical score
-
+    # Required skills are the foundation.
     if required_skills:
-        required_score = len(matched_required) / len(required_skills)
+        required_score = (
+            len(matched_required) / len(required_skills)
+        )
     else:
         required_score = 1.0
 
+    # Preferred skills only provide a bonus.
     if preferred_skills:
-        preferred_score = len(matched_preferred) / len(preferred_skills)
+        preferred_score = (
+            len(matched_preferred) / len(preferred_skills)
+        )
     else:
-        preferred_score = 1.0
+        preferred_score = 0.0
 
+    # Required skills account for 90%.
+    # Preferred skills provide up to a 10% bonus.
     technical_score = (
-        required_score * 70
-        + preferred_score * 30
+        required_score * 90
+        + preferred_score * 10
     )
+
+    # Cap at 100.
+    technical_score = min(technical_score, 100)
 
     return (
         round(technical_score),
         matched_required + matched_preferred,
         missing_required
     )
-
 
 def calculate_role_score(job: dict, profile: dict) -> int:
     """Score how well the job title matches the candidate's target roles."""

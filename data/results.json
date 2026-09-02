@@ -1,0 +1,87 @@
+[
+  {
+    "job_id": "job-001",
+    "title": "Senior Backend Java Engineer",
+    "company": "Example Cloud",
+    "location": "Seattle, WA",
+    "evaluated_at": "2026-09-02T18:18:26.782189+00:00",
+    "match_score": 92,
+    "recommendation": "APPLY",
+    "matched_skills": [
+      "Java",
+      "Spring Boot",
+      "Kafka",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "RESTful APIs",
+      "Microservices Architecture"
+    ],
+    "missing_skills": [],
+    "hard_filter_failures": [],
+    "breakdown": {
+      "technical_skills": 90,
+      "role_fit": 100,
+      "seniority": 100,
+      "location": 100,
+      "salary": 100,
+      "sponsorship": 100,
+      "company": 100
+    }
+  },
+  {
+    "job_id": "job-002",
+    "title": "Frontend React Developer",
+    "company": "Example Startup",
+    "location": "New York, NY",
+    "evaluated_at": "2026-09-02T18:18:26.782358+00:00",
+    "match_score": 44,
+    "recommendation": "SKIP",
+    "matched_skills": [
+      "React",
+      "TypeScript"
+    ],
+    "missing_skills": [
+      "JavaScript"
+    ],
+    "hard_filter_failures": [
+      "Location does not match preferences",
+      "Employer does not provide required sponsorship"
+    ],
+    "breakdown": {
+      "technical_skills": 60,
+      "role_fit": 20,
+      "seniority": 60,
+      "location": 0,
+      "salary": 100,
+      "sponsorship": 0,
+      "company": 60
+    }
+  },
+  {
+    "job_id": "job-003",
+    "title": "Backend Software Engineer",
+    "company": "Example SaaS",
+    "location": "Remote",
+    "evaluated_at": "2026-09-02T18:18:26.782473+00:00",
+    "match_score": 91,
+    "recommendation": "APPLY",
+    "matched_skills": [
+      "Java",
+      "Spring Boot",
+      "RESTful APIs",
+      "AWS"
+    ],
+    "missing_skills": [],
+    "hard_filter_failures": [],
+    "breakdown": {
+      "technical_skills": 93,
+      "role_fit": 100,
+      "seniority": 90,
+      "location": 100,
+      "salary": 100,
+      "sponsorship": 100,
+      "company": 80
+    }
+  }
+]

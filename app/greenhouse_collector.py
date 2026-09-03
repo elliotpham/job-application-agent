@@ -1,5 +1,11 @@
 import requests
-
+from app.job_extractor import (
+    clean_job_description,
+    extract_salary,
+    extract_years_experience,
+    extract_work_arrangement,
+    extract_required_and_preferred_skills,
+)
 
 BASE_URL = "https://boards-api.greenhouse.io/v1/boards"
 
@@ -49,20 +55,29 @@ def collect_greenhouse_jobs(board_token: str) -> list[dict]:
 
         job_id = job.get("id")
         details = get_job_details(board_token, job_id)
+        description = clean_job_description(details.get("content", ""))
+        salary_min, salary_max = extract_salary(description)
+        years_experience = extract_years_experience(description)
+        work_arrangement = extract_work_arrangement(description)
+        required_skills, preferred_skills = (
+            extract_required_and_preferred_skills(description)
+        )
 
         jobs.append({
             "id": f"greenhouse-{job_id}",
-            "title": details.get("title", ""),
+            "title": details.get("title", "").strip(),
             "company": "",
-            "description": details.get("content", ""),
+            "description": description,
             "location": details.get("location", {}).get("name", ""),
-            "remote": False,
-            "salary_min": None,
-            "salary_max": None,
+            "remote": work_arrangement == "remote",
+            "work_arrangement": work_arrangement,
+            "salary_min": salary_min,
+            "salary_max": salary_max,
             "sponsorship": None,
             "company_size": None,
-            "required_skills": [],
-            "preferred_skills": [],
+            "required_skills": required_skills,
+            "preferred_skills": preferred_skills,
+            "minimum_years_experience": years_experience,
             "apply_url": details.get("absolute_url"),
             "source": "greenhouse"
         })

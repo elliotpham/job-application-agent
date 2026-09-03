@@ -34,66 +34,71 @@ def contains_skill(text: str, skill: str) -> bool:
 
     return False
 
-def calculate_skill_score(job: dict, profile: dict) -> tuple[int, list, list]:
-    """
-    Required skills determine the core technical score.
-
-    Preferred skills can increase the score when present,
-    but missing preferred skills never reduce it.
-    """
+def calculate_skill_score(job: dict, profile: dict):
+    candidate_skills = {
+        skill.strip().lower()
+        for skill in profile.get("skills", [])
+    }
 
     required_skills = job.get("required_skills", [])
     preferred_skills = job.get("preferred_skills", [])
 
-    job_text = normalize(
-        f"{job.get('title', '')} {job.get('description', '')}"
-    )
+    matched_required = [
+        skill
+        for skill in required_skills
+        if skill.strip().lower() in candidate_skills
+    ]
 
-    matched_required = []
-    missing_required = []
+    missing_required = [
+        skill
+        for skill in required_skills
+        if skill.strip().lower() not in candidate_skills
+    ]
 
-    for skill in required_skills:
-        if contains_skill(job_text, skill):
-            matched_required.append(skill)
-        else:
-            missing_required.append(skill)
+    matched_preferred = [
+        skill
+        for skill in preferred_skills
+        if skill.strip().lower() in candidate_skills
+    ]
 
-    matched_preferred = []
-
-    for skill in preferred_skills:
-        if contains_skill(job_text, skill):
-            matched_preferred.append(skill)
-
-    # Required skills are the foundation.
+    # Required skills determine the core technical fit.
     if required_skills:
         required_score = (
             len(matched_required) / len(required_skills)
-        )
-    else:
-        required_score = 1.0
+        ) * 100
 
-    # Preferred skills only provide a bonus.
-    if preferred_skills:
-        preferred_score = (
+        # Preferred skills are a bonus, not a penalty.
+        if preferred_skills:
+            preferred_ratio = (
+                len(matched_preferred) / len(preferred_skills)
+            )
+
+            technical_score = required_score + (
+                (100 - required_score)
+                * 0.10
+                * preferred_ratio
+            )
+        else:
+            technical_score = required_score
+
+    # Some postings, like this Datadog one, don't name any
+    # specific required technologies. In that case, use the
+    # preferred/bonus technologies to estimate technical fit.
+    elif preferred_skills:
+        technical_score = (
             len(matched_preferred) / len(preferred_skills)
-        )
+        ) * 100
+
+    # No technical information in the posting = neutral score.
     else:
-        preferred_score = 0.0
+        technical_score = 70
 
-    # Required skills account for 90%.
-    # Preferred skills provide up to a 10% bonus.
-    technical_score = (
-        required_score * 90
-        + preferred_score * 10
-    )
-
-    # Cap at 100.
-    technical_score = min(technical_score, 100)
+    matched_skills = matched_required + matched_preferred
 
     return (
         round(technical_score),
-        matched_required + matched_preferred,
-        missing_required
+        matched_skills,
+        missing_required,
     )
 
 def calculate_role_score(job: dict, profile: dict) -> int:

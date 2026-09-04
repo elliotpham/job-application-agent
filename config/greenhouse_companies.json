@@ -1,0 +1,32 @@
+[
+  {
+    "board_token": "datadog",
+    "company_name": "Datadog",
+    "enabled": true
+  },
+  {
+    "board_token": "axon",
+    "company_name": "Axon",
+    "enabled": true
+  },
+  {
+    "board_token": "metropolis",
+    "company_name": "Metropolis",
+    "enabled": true
+  },
+  {
+    "board_token": "nice",
+    "company_name": "NICE",
+    "enabled": true
+  },
+  {
+    "board_token": "impact",
+    "company_name": "impact.com",
+    "enabled": true
+  },
+  {
+    "board_token": "andurilindustries",
+    "company_name": "Anduril",
+    "enabled": true
+  }
+]

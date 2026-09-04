@@ -1,5 +1,8 @@
 import re
-
+from app.location_utils import (
+    is_washington_state_location,
+    is_us_remote_location,
+)
 
 def normalize(text: str) -> str:
     """Normalize text for case-insensitive matching."""
@@ -175,43 +178,34 @@ def calculate_seniority_score(job: dict, profile: dict) -> int:
 
     return 60
 
+def calculate_location_score(
+    job: dict,
+    profile: dict
+) -> tuple[int, bool]:
 
-def calculate_location_score(job: dict, profile: dict) -> tuple[int, bool]:
-    """
-    Return location score and whether the job passes the hard location filter.
-    """
+    location = job.get("location", "")
 
-    location = normalize(job.get("location", ""))
-    remote = job.get("remote", False)
-
-    if remote:
-        return 100, True
-
-    if "remote" in location:
-        return 100, True
-
-    # Washington locations
-    washington_locations = [
-        "washington",
-        "seattle",
-        "bellevue",
-        "redmond",
-        "kirkland",
-        "renton",
-        "tacoma",
-        "bothell",
-        "everett",
+    preferred_locations = [
+        location.lower()
+        for location in profile.get(
+            "preferred_locations",
+            []
+        )
     ]
 
-    if any(city in location for city in washington_locations):
+    if (
+        "washington" in preferred_locations
+        and is_washington_state_location(location)
+    ):
         return 100, True
 
-    # User does not want to relocate
-    if profile.get("willing_to_relocate") is False:
-        return 0, False
+    if (
+        "remote" in preferred_locations
+        and is_us_remote_location(location)
+    ):
+        return 100, True
 
-    return 50, True
-
+    return 0, False
 
 def calculate_salary_score(job: dict, profile: dict) -> tuple[int, bool]:
     """

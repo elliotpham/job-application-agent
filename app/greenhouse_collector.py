@@ -6,6 +6,11 @@ from app.job_extractor import (
     extract_work_arrangement,
     extract_required_and_preferred_skills,
 )
+from app.location_utils import (
+    is_washington_state_location,
+    is_us_remote_location,
+    location_indicates_remote,
+)
 
 BASE_URL = "https://boards-api.greenhouse.io/v1/boards"
 
@@ -18,15 +23,63 @@ TARGET_KEYWORDS = [
     "java developer",
 ]
 
+EXCLUDED_TITLE_KEYWORDS = [
+    # Wrong seniority
+    "intern",
+    "internship",
+    "early career",
+    "new grad",
+    "graduate",
+    "junior",
+    "staff",
+    "principal",
+    "lead software",
+    "manager",
+    "director",
+
+    # Wrong specialization
+    "front end",
+    "frontend",
+    "front-end",
+    "embedded",
+    "firmware",
+    "test automation",
+    "qa engineer",
+    "quality assurance",
+    "data science",
+    "data scientist",
+    "robotics",
+    "sensor fusion",
+    "computer vision",
+    "ios",
+    "android",
+    "mobile engineer",
+    "rust software",
+]
+
 
 def is_relevant_title(title: str) -> bool:
-    title_lower = title.lower()
+    title_lower = title.lower().strip()
+
+    if any(
+        keyword in title_lower
+        for keyword in EXCLUDED_TITLE_KEYWORDS
+    ):
+        return False
 
     return any(
         keyword in title_lower
         for keyword in TARGET_KEYWORDS
     )
 
+def is_relevant_location(location: str) -> bool:
+    if not location:
+        return True
+
+    return (
+        is_washington_state_location(location)
+        or is_us_remote_location(location)
+    )
 
 def get_job_details(board_token: str, job_id: int) -> dict:
     url = f"{BASE_URL}/{board_token}/jobs/{job_id}"
@@ -37,7 +90,10 @@ def get_job_details(board_token: str, job_id: int) -> dict:
     return response.json()
 
 
-def collect_greenhouse_jobs(board_token: str) -> list[dict]:
+def collect_greenhouse_jobs(
+        board_token: str,
+        company_name: str = ""
+    ) -> list[dict]:
     url = f"{BASE_URL}/{board_token}/jobs"
 
     response = requests.get(url, timeout=30)
@@ -53,6 +109,14 @@ def collect_greenhouse_jobs(board_token: str) -> list[dict]:
         if not is_relevant_title(title):
             continue
 
+        location = job.get("location", {}).get(
+            "name",
+            ""
+        )
+
+        if not is_relevant_location(location):
+            continue
+
         job_id = job.get("id")
         details = get_job_details(board_token, job_id)
         description = clean_job_description(details.get("content", ""))
@@ -64,12 +128,15 @@ def collect_greenhouse_jobs(board_token: str) -> list[dict]:
         )
 
         jobs.append({
-            "id": f"greenhouse-{job_id}",
+            "id": f"greenhouse-{board_token}-{job_id}",
             "title": details.get("title", "").strip(),
-            "company": "",
+            "company": company_name,
             "description": description,
             "location": details.get("location", {}).get("name", ""),
-            "remote": work_arrangement == "remote",
+            "remote": (
+                work_arrangement == "remote"
+                or location_indicates_remote(location)
+            ),
             "work_arrangement": work_arrangement,
             "salary_min": salary_min,
             "salary_max": salary_max,

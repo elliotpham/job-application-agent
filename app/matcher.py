@@ -37,6 +37,27 @@ def contains_skill(text: str, skill: str) -> bool:
 
     return False
 
+def requires_active_clearance(job: dict) -> bool:
+    title = (job.get("title") or "").lower()
+    description = (job.get("description") or "").lower()
+
+    clearance_phrases = [
+        "active clearance",
+        "active security clearance",
+        "active secret clearance",
+        "active top secret clearance",
+        "active ts/sci",
+        "active ts/sci clearance",
+    ]
+
+    combined_text = f"{title} {description}"
+
+    return any(
+        phrase in combined_text
+        for phrase in clearance_phrases
+    )
+
+
 def calculate_skill_score(job: dict, profile: dict):
     candidate_skills = {
         skill.strip().lower()
@@ -359,6 +380,12 @@ def calculate_match(job: dict, profile: dict) -> dict:
     )
 
     hard_filter_failures = []
+
+    if (
+        requires_active_clearance(job)
+        and profile.get("has_active_security_clearance") is not True
+    ):
+        hard_filter_failures.append("Active security clearance required")
 
     if not location_pass:
         hard_filter_failures.append("Location does not match preferences")

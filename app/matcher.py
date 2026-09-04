@@ -105,38 +105,64 @@ def calculate_skill_score(job: dict, profile: dict):
     )
 
 def calculate_role_score(job: dict, profile: dict) -> int:
-    """Score how well the job title matches the candidate's target roles."""
+    title = (job.get("title") or "").lower().strip()
 
-    title = normalize(job.get("title", ""))
+    # Clearly outside the user's target specialization.
+    mismatch_keywords = [
+        "manufacturing test",
+        "test automation",
+        "quality assurance",
+        "qa engineer",
+        "front end",
+        "frontend",
+        "front-end",
+        "embedded",
+        "firmware",
+        "robotics",
+        "sensor fusion",
+        "data science",
+        "data scientist",
+        "ios",
+        "android",
+    ]
 
-    target_roles = profile.get("target_roles", [])
+    if any(keyword in title for keyword in mismatch_keywords):
+        return 40
 
-    for role in target_roles:
-        if normalize(role) in title:
-            return 100
-
-    # Strong backend/Java signals
-    backend_keywords = [
+    # Best matches.
+    strong_target_keywords = [
         "backend",
-        "back-end",
         "java",
+    ]
+
+    if any(keyword in title for keyword in strong_target_keywords):
+        return 100
+
+    # Very relevant adjacent backend/infrastructure roles.
+    adjacent_keywords = [
+        "platform",
+        "api",
+        "sdk",
+        "distributed",
+        "cloud",
+        "infrastructure",
+        "microservice",
+    ]
+
+    if any(keyword in title for keyword in adjacent_keywords):
+        return 95
+
+    # General SWE is still one of your target roles,
+    # but less specific than Java/backend.
+    general_keywords = [
         "software engineer",
         "software developer",
     ]
 
-    matches = sum(
-        1 for keyword in backend_keywords
-        if keyword in title
-    )
-
-    if matches >= 2:
+    if any(keyword in title for keyword in general_keywords):
         return 90
 
-    if matches == 1:
-        return 70
-
-    return 20
-
+    return 70
 
 def calculate_seniority_score(job: dict, profile: dict) -> int:
     """Score whether the job seniority fits the candidate."""

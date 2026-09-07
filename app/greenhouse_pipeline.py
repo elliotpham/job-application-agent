@@ -126,5 +126,12 @@ if __name__ == "__main__":
                     result["hard_filter_failures"]
                 )
             )
+        
+        if result.get("minimum_years_experience") is not None:
+            print(
+                "Experience required:",
+                result["minimum_years_experience"],
+                "years"
+            )
 
         print()

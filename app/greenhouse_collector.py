@@ -11,6 +11,14 @@ from app.location_utils import (
     is_us_remote_location,
     location_indicates_remote,
 )
+from app.job_extractor import (
+    clean_job_description,
+    extract_salary,
+    extract_years_experience,
+    extract_work_arrangement,
+    extract_required_and_preferred_skills,
+    extract_sponsorship,
+)
 
 BASE_URL = "https://boards-api.greenhouse.io/v1/boards"
 
@@ -123,6 +131,7 @@ def collect_greenhouse_jobs(
         salary_min, salary_max = extract_salary(description)
         years_experience = extract_years_experience(description)
         work_arrangement = extract_work_arrangement(description)
+        sponsorship = extract_sponsorship(description)
         required_skills, preferred_skills = (
             extract_required_and_preferred_skills(description)
         )
@@ -140,7 +149,7 @@ def collect_greenhouse_jobs(
             "work_arrangement": work_arrangement,
             "salary_min": salary_min,
             "salary_max": salary_max,
-            "sponsorship": None,
+            "sponsorship": sponsorship,
             "company_size": None,
             "required_skills": required_skills,
             "preferred_skills": preferred_skills,

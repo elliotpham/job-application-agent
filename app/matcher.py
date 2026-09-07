@@ -316,48 +316,39 @@ def calculate_salary_score(job: dict, profile: dict) -> tuple[int, bool]:
     # If salary range overlaps candidate range.
     return 100, True
 
+def calculate_sponsorship_score(
+    job: dict,
+    profile: dict
+) -> tuple[int, bool]:
 
-def calculate_sponsorship_score(job: dict, profile: dict) -> tuple[int, bool]:
-    """
-    Handle sponsorship requirements.
-
-    Explicitly refusing sponsorship is a hard rejection.
-    Unknown sponsorship policy is not rejected.
-    """
-
-    requires_sponsorship = profile["work_authorization"][
-        "requires_sponsorship_now_or_future"
-    ]
+    requires_sponsorship = profile.get(
+        "work_authorization",
+        {}
+    ).get(
+        "requires_sponsorship_now_or_future",
+        False
+    )
 
     if not requires_sponsorship:
         return 100, True
 
-    sponsorship = normalize(job.get("sponsorship", ""))
+    sponsorship = job.get("sponsorship")
 
-    if any(
-        phrase in sponsorship
-        for phrase in [
-            "no sponsorship",
-            "will not sponsor",
-            "does not sponsor",
-            "unable to sponsor",
-            "without sponsorship",
-        ]
-    ):
-        return 0, False
-
-    if any(
-        phrase in sponsorship
-        for phrase in [
-            "sponsorship available",
-            "will sponsor",
-            "visa sponsorship",
-        ]
-    ):
+    # User preference:
+    # if sponsorship is not stated, assume it is available.
+    if sponsorship is None:
         return 100, True
 
-    # Unknown
-    return 60, True
+    sponsorship_lower = str(sponsorship).lower()
+
+    if sponsorship_lower == "available":
+        return 100, True
+
+    if sponsorship_lower == "not available":
+        return 0, False
+
+    # Unknown/unrecognized wording: assume available.
+    return 100, True
 
 
 def calculate_company_score(job: dict, profile: dict) -> int:

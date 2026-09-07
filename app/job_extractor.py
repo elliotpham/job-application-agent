@@ -76,6 +76,45 @@ def extract_years_experience(text: str) -> int | None:
     # for different qualification levels.
     return min(matches)
 
+def extract_sponsorship(text: str) -> str | None:
+    text_lower = text.lower()
+
+    negative_phrases = [
+        "does not sponsor",
+        "do not sponsor",
+        "no sponsorship",
+        "unable to sponsor",
+        "cannot sponsor",
+        "not able to sponsor",
+        "without sponsorship",
+        "must be authorized to work in the united states without sponsorship",
+        "must be legally authorized to work in the united states without sponsorship",
+        "we are unable to provide sponsorship",
+    ]
+
+    if any(
+        phrase in text_lower
+        for phrase in negative_phrases
+    ):
+        return "not available"
+
+    positive_phrases = [
+        "visa sponsorship available",
+        "sponsorship available",
+        "will sponsor",
+        "can sponsor",
+        "visa sponsorship",
+        "immigration sponsorship",
+    ]
+
+    if any(
+        phrase in text_lower
+        for phrase in positive_phrases
+    ):
+        return "available"
+
+    return None
+
 
 def extract_work_arrangement(text: str) -> str | None:
     text_lower = text.lower()

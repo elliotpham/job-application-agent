@@ -40,18 +40,41 @@ def extract_salary(text: str) -> tuple[int | None, int | None]:
 
     return salary_min, salary_max
 
-
 def extract_years_experience(text: str) -> int | None:
-    match = re.search(
+    patterns = [
+        # "5+ years of experience"
         r"(\d+)\+?\s+years?\s+of\s+experience",
-        text,
-        re.IGNORECASE
-    )
 
-    if not match:
+        # "5+ years of software engineering experience"
+        r"(\d+)\+?\s+years?\s+of\s+[\w\s/-]+?\s+experience",
+
+        # "at least 5 years of experience"
+        r"at\s+least\s+(\d+)\s+years?\s+of\s+experience",
+
+        # "minimum of 5 years of experience"
+        r"minimum\s+of\s+(\d+)\s+years?\s+of\s+experience",
+
+        # "5 years experience"
+        r"(\d+)\+?\s+years?\s+experience",
+    ]
+
+    matches = []
+
+    for pattern in patterns:
+        for match in re.finditer(
+            pattern,
+            text,
+            re.IGNORECASE
+        ):
+            matches.append(int(match.group(1)))
+
+    if not matches:
         return None
 
-    return int(match.group(1))
+    # Use the lowest explicit experience requirement.
+    # Example: a description may mention both 5+ and 8+ years
+    # for different qualification levels.
+    return min(matches)
 
 
 def extract_work_arrangement(text: str) -> str | None:

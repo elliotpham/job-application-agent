@@ -125,6 +125,33 @@ def calculate_skill_score(job: dict, profile: dict):
         missing_required,
     )
 
+def calculate_experience_score(
+    job: dict,
+    profile: dict
+) -> tuple[int, bool]:
+
+    required_years = job.get("minimum_years_experience")
+    candidate_years = profile.get("years_of_experience")
+
+    # No explicit experience requirement.
+    if required_years is None or candidate_years is None:
+        return 70, True
+
+    gap = required_years - candidate_years
+
+    if gap <= 0:
+        return 100, True
+
+    if gap == 1:
+        return 80, True
+
+    if gap == 2:
+        return 60, True
+
+    # 3+ year gap is too large for automatic application.
+    return 30, False
+
+
 def calculate_role_score(job: dict, profile: dict) -> int:
     title = (job.get("title") or "").lower().strip()
 
@@ -365,6 +392,9 @@ def calculate_match(job: dict, profile: dict) -> dict:
 
     role_score = calculate_role_score(job, profile)
     seniority_score = calculate_seniority_score(job, profile)
+    experience_score, experience_pass = calculate_experience_score(
+        job, profile
+    )
 
     location_score, location_pass = calculate_location_score(
         job, profile
@@ -385,6 +415,7 @@ def calculate_match(job: dict, profile: dict) -> dict:
         skill_score * 0.35
         + role_score * 0.20
         + seniority_score * 0.10
+        + experience_score * 0.05
         + location_score * 0.10
         + salary_score * 0.10
         + sponsorship_score * 0.05
@@ -396,6 +427,11 @@ def calculate_match(job: dict, profile: dict) -> dict:
     if role_score < 70:
         hard_filter_failures.append(
             "Role specialization does not match target roles"
+        )
+
+    if not experience_pass:
+        hard_filter_failures.append(
+            "Experience requirement is significantly above candidate experience"
         )
 
     if (

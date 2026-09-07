@@ -1,27 +1,28 @@
 [
   {
-    "job_id": "greenhouse-axon-7704335003",
-    "title": "Senior Software Engineer I",
-    "company": "Axon",
+    "job_id": "greenhouse-andurilindustries-5201924007",
+    "title": "Senior Software Engineer, Distributed Networks",
+    "company": "Anduril",
     "location": "Seattle, Washington, United States",
-    "salary_min": 141000,
-    "salary_max": 225600,
+    "salary_min": 191000,
+    "salary_max": 253000,
     "work_arrangement": null,
-    "minimum_years_experience": null,
-    "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7704335003",
-    "evaluated_at": "2026-09-07T06:27:57.599481+00:00",
-    "match_score": 90,
+    "minimum_years_experience": 5,
+    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5201924007?gh_jid=5201924007",
+    "evaluated_at": "2026-09-07T06:33:36.729236+00:00",
+    "match_score": 96,
     "recommendation": "APPLY",
     "matched_skills": [
-      "Java",
       "Go",
-      "AWS"
+      "C++",
+      "AWS",
+      "Kubernetes"
     ],
     "missing_skills": [],
     "hard_filter_failures": [],
     "breakdown": {
       "technical_skills": 100,
-      "role_fit": 90,
+      "role_fit": 95,
       "seniority": 100,
       "location": 100,
       "salary": 100,
@@ -30,22 +31,20 @@
     }
   },
   {
-    "job_id": "greenhouse-axon-7766519003",
-    "title": "Senior Software Engineer II",
+    "job_id": "greenhouse-axon-7704335003",
+    "title": "Senior Software Engineer I",
     "company": "Axon",
-    "location": "Washington, United States",
-    "salary_min": 148500,
-    "salary_max": 237600,
+    "location": "Seattle, Washington, United States",
+    "salary_min": 141000,
+    "salary_max": 225600,
     "work_arrangement": null,
-    "minimum_years_experience": null,
-    "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7766519003",
-    "evaluated_at": "2026-09-07T06:27:57.599607+00:00",
-    "match_score": 90,
+    "minimum_years_experience": 6,
+    "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7704335003",
+    "evaluated_at": "2026-09-07T06:33:36.723975+00:00",
+    "match_score": 94,
     "recommendation": "APPLY",
     "matched_skills": [
       "Java",
-      "Kafka",
-      "Python",
       "Go",
       "AWS"
     ],
@@ -69,10 +68,10 @@
     "salary_min": 141000,
     "salary_max": 225600,
     "work_arrangement": null,
-    "minimum_years_experience": null,
+    "minimum_years_experience": 6,
     "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7576935003",
-    "evaluated_at": "2026-09-07T06:27:57.599730+00:00",
-    "match_score": 90,
+    "evaluated_at": "2026-09-07T06:33:36.724800+00:00",
+    "match_score": 94,
     "recommendation": "APPLY",
     "matched_skills": [
       "Java",
@@ -99,48 +98,15 @@
     "salary_min": 141000,
     "salary_max": 225600,
     "work_arrangement": null,
-    "minimum_years_experience": null,
+    "minimum_years_experience": 6,
     "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7576610003",
-    "evaluated_at": "2026-09-07T06:27:57.599818+00:00",
-    "match_score": 90,
+    "evaluated_at": "2026-09-07T06:33:36.724982+00:00",
+    "match_score": 94,
     "recommendation": "APPLY",
     "matched_skills": [
       "Java",
       "Go",
       "AWS"
-    ],
-    "missing_skills": [],
-    "hard_filter_failures": [],
-    "breakdown": {
-      "technical_skills": 100,
-      "role_fit": 90,
-      "seniority": 100,
-      "location": 100,
-      "salary": 100,
-      "sponsorship": 60,
-      "company": 70
-    }
-  },
-  {
-    "job_id": "greenhouse-axon-7566950003",
-    "title": "Sr Software Engineer II",
-    "company": "Axon",
-    "location": "Seattle, Washington, United States",
-    "salary_min": 148500,
-    "salary_max": 237600,
-    "work_arrangement": null,
-    "minimum_years_experience": null,
-    "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7566950003",
-    "evaluated_at": "2026-09-07T06:27:57.599914+00:00",
-    "match_score": 90,
-    "recommendation": "APPLY",
-    "matched_skills": [
-      "Java",
-      "Go",
-      "AWS",
-      "Docker",
-      "Kubernetes",
-      "Jenkins"
     ],
     "missing_skills": [],
     "hard_filter_failures": [],
@@ -162,10 +128,10 @@
     "salary_min": 166000,
     "salary_max": 220000,
     "work_arrangement": null,
-    "minimum_years_experience": null,
+    "minimum_years_experience": 5,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5160667007?gh_jid=5160667007",
-    "evaluated_at": "2026-09-07T06:27:57.600296+00:00",
-    "match_score": 90,
+    "evaluated_at": "2026-09-07T06:33:36.726949+00:00",
+    "match_score": 94,
     "recommendation": "SKIP",
     "matched_skills": [
       "Python",
@@ -197,8 +163,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/4672848007?gh_jid=4672848007",
-    "evaluated_at": "2026-09-07T06:27:57.600368+00:00",
-    "match_score": 90,
+    "evaluated_at": "2026-09-07T06:33:36.727095+00:00",
+    "match_score": 94,
     "recommendation": "APPLY",
     "matched_skills": [
       "Java",
@@ -227,10 +193,10 @@
     "salary_min": 191000,
     "salary_max": 253000,
     "work_arrangement": null,
-    "minimum_years_experience": null,
+    "minimum_years_experience": 5,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5195030007?gh_jid=5195030007",
-    "evaluated_at": "2026-09-07T06:27:57.600583+00:00",
-    "match_score": 90,
+    "evaluated_at": "2026-09-07T06:33:36.728350+00:00",
+    "match_score": 94,
     "recommendation": "APPLY",
     "matched_skills": [
       "C++",
@@ -258,8 +224,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5185971007?gh_jid=5185971007",
-    "evaluated_at": "2026-09-07T06:27:57.600662+00:00",
-    "match_score": 90,
+    "evaluated_at": "2026-09-07T06:33:36.728520+00:00",
+    "match_score": 94,
     "recommendation": "APPLY",
     "matched_skills": [
       "Python",
@@ -268,43 +234,6 @@
       "Docker",
       "Kubernetes",
       "Jenkins"
-    ],
-    "missing_skills": [],
-    "hard_filter_failures": [],
-    "breakdown": {
-      "technical_skills": 100,
-      "role_fit": 95,
-      "seniority": 100,
-      "location": 100,
-      "salary": 100,
-      "sponsorship": 60,
-      "company": 70
-    }
-  },
-  {
-    "job_id": "greenhouse-andurilindustries-5181986007",
-    "title": "Senior Software Engineer, API/SDK",
-    "company": "Anduril",
-    "location": "Seattle, Washington, United States",
-    "salary_min": 191000,
-    "salary_max": 253000,
-    "work_arrangement": null,
-    "minimum_years_experience": 8,
-    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5181986007?gh_jid=5181986007",
-    "evaluated_at": "2026-09-07T06:27:57.600769+00:00",
-    "match_score": 90,
-    "recommendation": "APPLY",
-    "matched_skills": [
-      "Java",
-      "Python",
-      "Go",
-      "C++",
-      "AWS",
-      "GCP",
-      "Docker",
-      "Kubernetes",
-      "GraphQL",
-      "Microservices Architecture"
     ],
     "missing_skills": [],
     "hard_filter_failures": [],
@@ -328,8 +257,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5188525007?gh_jid=5188525007",
-    "evaluated_at": "2026-09-07T06:27:57.600848+00:00",
-    "match_score": 90,
+    "evaluated_at": "2026-09-07T06:33:36.729079+00:00",
+    "match_score": 93,
     "recommendation": "APPLY",
     "matched_skills": [
       "Java",
@@ -337,70 +266,6 @@
       "Go",
       "C++",
       "AWS"
-    ],
-    "missing_skills": [],
-    "hard_filter_failures": [],
-    "breakdown": {
-      "technical_skills": 100,
-      "role_fit": 90,
-      "seniority": 100,
-      "location": 100,
-      "salary": 100,
-      "sponsorship": 60,
-      "company": 70
-    }
-  },
-  {
-    "job_id": "greenhouse-andurilindustries-5201924007",
-    "title": "Senior Software Engineer, Distributed Networks",
-    "company": "Anduril",
-    "location": "Seattle, Washington, United States",
-    "salary_min": 191000,
-    "salary_max": 253000,
-    "work_arrangement": null,
-    "minimum_years_experience": null,
-    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5201924007?gh_jid=5201924007",
-    "evaluated_at": "2026-09-07T06:27:57.600923+00:00",
-    "match_score": 90,
-    "recommendation": "APPLY",
-    "matched_skills": [
-      "Go",
-      "C++",
-      "AWS",
-      "Kubernetes"
-    ],
-    "missing_skills": [],
-    "hard_filter_failures": [],
-    "breakdown": {
-      "technical_skills": 100,
-      "role_fit": 95,
-      "seniority": 100,
-      "location": 100,
-      "salary": 100,
-      "sponsorship": 60,
-      "company": 70
-    }
-  },
-  {
-    "job_id": "greenhouse-andurilindustries-5133681007",
-    "title": "Senior Software Engineer, Quality Integration",
-    "company": "Anduril",
-    "location": "Seattle, Washington, United States",
-    "salary_min": 146000,
-    "salary_max": 194000,
-    "work_arrangement": null,
-    "minimum_years_experience": 10,
-    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5133681007?gh_jid=5133681007",
-    "evaluated_at": "2026-09-07T06:27:57.601213+00:00",
-    "match_score": 90,
-    "recommendation": "APPLY",
-    "matched_skills": [
-      "Python",
-      "AWS",
-      "GCP",
-      "Docker",
-      "Kubernetes",
-      "Jenkins"
     ],
     "missing_skills": [],
     "hard_filter_failures": [],
@@ -424,8 +289,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5130646007?gh_jid=5130646007",
-    "evaluated_at": "2026-09-07T06:27:57.601519+00:00",
-    "match_score": 90,
+    "evaluated_at": "2026-09-07T06:33:36.730488+00:00",
+    "match_score": 93,
     "recommendation": "APPLY",
     "matched_skills": [
       "Java",
@@ -443,73 +308,6 @@
       "seniority": 90,
       "location": 100,
       "salary": 100,
-      "sponsorship": 60,
-      "company": 70
-    }
-  },
-  {
-    "job_id": "greenhouse-andurilindustries-5131066007",
-    "title": "Software Engineer, Geospatial Platform (Terra)",
-    "company": "Anduril",
-    "location": "Seattle, Washington, United States",
-    "salary_min": 166000,
-    "salary_max": 220000,
-    "work_arrangement": null,
-    "minimum_years_experience": null,
-    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5131066007?gh_jid=5131066007",
-    "evaluated_at": "2026-09-07T06:27:57.601911+00:00",
-    "match_score": 90,
-    "recommendation": "APPLY",
-    "matched_skills": [
-      "Java",
-      "Python",
-      "Go",
-      "C++",
-      "AWS",
-      "Kubernetes"
-    ],
-    "missing_skills": [],
-    "hard_filter_failures": [],
-    "breakdown": {
-      "technical_skills": 100,
-      "role_fit": 95,
-      "seniority": 90,
-      "location": 100,
-      "salary": 100,
-      "sponsorship": 60,
-      "company": 70
-    }
-  },
-  {
-    "job_id": "greenhouse-metropolis-7778312003",
-    "title": "Senior Software Engineer, Platform",
-    "company": "Metropolis",
-    "location": "Seattle, Washington, United States",
-    "salary_min": null,
-    "salary_max": null,
-    "work_arrangement": "onsite",
-    "minimum_years_experience": 8,
-    "apply_url": "https://job-boards.greenhouse.io/metropolis/jobs/7778312003",
-    "evaluated_at": "2026-09-07T06:27:57.599987+00:00",
-    "match_score": 88,
-    "recommendation": "APPLY",
-    "matched_skills": [
-      "Java",
-      "Kafka",
-      "Redis",
-      "Go",
-      "AWS",
-      "Kubernetes",
-      "Microservices Architecture"
-    ],
-    "missing_skills": [],
-    "hard_filter_failures": [],
-    "breakdown": {
-      "technical_skills": 100,
-      "role_fit": 95,
-      "seniority": 100,
-      "location": 100,
-      "salary": 70,
       "sponsorship": 60,
       "company": 70
     }
@@ -524,8 +322,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5160360007?gh_jid=5160360007",
-    "evaluated_at": "2026-09-07T06:27:57.600238+00:00",
-    "match_score": 88,
+    "evaluated_at": "2026-09-07T06:33:36.726809+00:00",
+    "match_score": 92,
     "recommendation": "APPLY",
     "matched_skills": [
       "Java",
@@ -547,6 +345,45 @@
     }
   },
   {
+    "job_id": "greenhouse-andurilindustries-5181986007",
+    "title": "Senior Software Engineer, API/SDK",
+    "company": "Anduril",
+    "location": "Seattle, Washington, United States",
+    "salary_min": 191000,
+    "salary_max": 253000,
+    "work_arrangement": null,
+    "minimum_years_experience": 8,
+    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5181986007?gh_jid=5181986007",
+    "evaluated_at": "2026-09-07T06:33:36.728895+00:00",
+    "match_score": 92,
+    "recommendation": "SKIP",
+    "matched_skills": [
+      "Java",
+      "Python",
+      "Go",
+      "C++",
+      "AWS",
+      "GCP",
+      "Docker",
+      "Kubernetes",
+      "GraphQL",
+      "Microservices Architecture"
+    ],
+    "missing_skills": [],
+    "hard_filter_failures": [
+      "Experience requirement is significantly above candidate experience"
+    ],
+    "breakdown": {
+      "technical_skills": 100,
+      "role_fit": 95,
+      "seniority": 100,
+      "location": 100,
+      "salary": 100,
+      "sponsorship": 60,
+      "company": 70
+    }
+  },
+  {
     "job_id": "greenhouse-andurilindustries-5161486007",
     "title": "Software Engineer, Command Control Mission Autonomy",
     "company": "Anduril",
@@ -556,8 +393,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5161486007?gh_jid=5161486007",
-    "evaluated_at": "2026-09-07T06:27:57.601595+00:00",
-    "match_score": 88,
+    "evaluated_at": "2026-09-07T06:33:36.730635+00:00",
+    "match_score": 92,
     "recommendation": "APPLY",
     "matched_skills": [
       "Java",
@@ -588,8 +425,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/4263030007?gh_jid=4263030007",
-    "evaluated_at": "2026-09-07T06:27:57.601658+00:00",
-    "match_score": 88,
+    "evaluated_at": "2026-09-07T06:33:36.730992+00:00",
+    "match_score": 92,
     "recommendation": "SKIP",
     "matched_skills": [
       "Java",
@@ -622,8 +459,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/4980592007?gh_jid=4980592007",
-    "evaluated_at": "2026-09-07T06:27:57.601750+00:00",
-    "match_score": 88,
+    "evaluated_at": "2026-09-07T06:33:36.731153+00:00",
+    "match_score": 92,
     "recommendation": "APPLY",
     "matched_skills": [
       "Java",
@@ -645,6 +482,110 @@
     }
   },
   {
+    "job_id": "greenhouse-axon-7766519003",
+    "title": "Senior Software Engineer II",
+    "company": "Axon",
+    "location": "Washington, United States",
+    "salary_min": 148500,
+    "salary_max": 237600,
+    "work_arrangement": null,
+    "minimum_years_experience": 8,
+    "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7766519003",
+    "evaluated_at": "2026-09-07T06:33:36.724224+00:00",
+    "match_score": 91,
+    "recommendation": "SKIP",
+    "matched_skills": [
+      "Java",
+      "Kafka",
+      "Python",
+      "Go",
+      "AWS"
+    ],
+    "missing_skills": [],
+    "hard_filter_failures": [
+      "Experience requirement is significantly above candidate experience"
+    ],
+    "breakdown": {
+      "technical_skills": 100,
+      "role_fit": 90,
+      "seniority": 100,
+      "location": 100,
+      "salary": 100,
+      "sponsorship": 60,
+      "company": 70
+    }
+  },
+  {
+    "job_id": "greenhouse-axon-7566950003",
+    "title": "Sr Software Engineer II",
+    "company": "Axon",
+    "location": "Seattle, Washington, United States",
+    "salary_min": 148500,
+    "salary_max": 237600,
+    "work_arrangement": null,
+    "minimum_years_experience": 8,
+    "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7566950003",
+    "evaluated_at": "2026-09-07T06:33:36.725160+00:00",
+    "match_score": 91,
+    "recommendation": "SKIP",
+    "matched_skills": [
+      "Java",
+      "Go",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Jenkins"
+    ],
+    "missing_skills": [],
+    "hard_filter_failures": [
+      "Experience requirement is significantly above candidate experience"
+    ],
+    "breakdown": {
+      "technical_skills": 100,
+      "role_fit": 90,
+      "seniority": 100,
+      "location": 100,
+      "salary": 100,
+      "sponsorship": 60,
+      "company": 70
+    }
+  },
+  {
+    "job_id": "greenhouse-andurilindustries-5133681007",
+    "title": "Senior Software Engineer, Quality Integration",
+    "company": "Anduril",
+    "location": "Seattle, Washington, United States",
+    "salary_min": 146000,
+    "salary_max": 194000,
+    "work_arrangement": null,
+    "minimum_years_experience": 10,
+    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5133681007?gh_jid=5133681007",
+    "evaluated_at": "2026-09-07T06:33:36.729894+00:00",
+    "match_score": 91,
+    "recommendation": "SKIP",
+    "matched_skills": [
+      "Python",
+      "AWS",
+      "GCP",
+      "Docker",
+      "Kubernetes",
+      "Jenkins"
+    ],
+    "missing_skills": [],
+    "hard_filter_failures": [
+      "Experience requirement is significantly above candidate experience"
+    ],
+    "breakdown": {
+      "technical_skills": 100,
+      "role_fit": 90,
+      "seniority": 100,
+      "location": 100,
+      "salary": 100,
+      "sponsorship": 60,
+      "company": 70
+    }
+  },
+  {
     "job_id": "greenhouse-metropolis-7746447003",
     "title": "Senior Software Engineer, Product Foundations",
     "company": "Metropolis",
@@ -652,10 +593,10 @@
     "salary_min": null,
     "salary_max": null,
     "work_arrangement": "onsite",
-    "minimum_years_experience": null,
+    "minimum_years_experience": 6,
     "apply_url": "https://job-boards.greenhouse.io/metropolis/jobs/7746447003",
-    "evaluated_at": "2026-09-07T06:27:57.600071+00:00",
-    "match_score": 86,
+    "evaluated_at": "2026-09-07T06:33:36.725446+00:00",
+    "match_score": 90,
     "recommendation": "APPLY",
     "matched_skills": [
       "Java",
@@ -678,6 +619,42 @@
     }
   },
   {
+    "job_id": "greenhouse-metropolis-7778312003",
+    "title": "Senior Software Engineer, Platform",
+    "company": "Metropolis",
+    "location": "Seattle, Washington, United States",
+    "salary_min": null,
+    "salary_max": null,
+    "work_arrangement": "onsite",
+    "minimum_years_experience": 8,
+    "apply_url": "https://job-boards.greenhouse.io/metropolis/jobs/7778312003",
+    "evaluated_at": "2026-09-07T06:33:36.725294+00:00",
+    "match_score": 89,
+    "recommendation": "SKIP",
+    "matched_skills": [
+      "Java",
+      "Kafka",
+      "Redis",
+      "Go",
+      "AWS",
+      "Kubernetes",
+      "Microservices Architecture"
+    ],
+    "missing_skills": [],
+    "hard_filter_failures": [
+      "Experience requirement is significantly above candidate experience"
+    ],
+    "breakdown": {
+      "technical_skills": 100,
+      "role_fit": 95,
+      "seniority": 100,
+      "location": 100,
+      "salary": 70,
+      "sponsorship": 60,
+      "company": 70
+    }
+  },
+  {
     "job_id": "greenhouse-andurilindustries-5152747007",
     "title": "Senior Software Engineer - Forge Factory Automation",
     "company": "Anduril",
@@ -687,8 +664,8 @@
     "work_arrangement": null,
     "minimum_years_experience": 5,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5152747007?gh_jid=5152747007",
-    "evaluated_at": "2026-09-07T06:27:57.600996+00:00",
-    "match_score": 84,
+    "evaluated_at": "2026-09-07T06:33:36.729385+00:00",
+    "match_score": 88,
     "recommendation": "SKIP",
     "matched_skills": [
       "Java",
@@ -710,6 +687,38 @@
     }
   },
   {
+    "job_id": "greenhouse-andurilindustries-5009240007",
+    "title": "Software Engineer, C++",
+    "company": "Anduril",
+    "location": "Bellevue, Washington, United States",
+    "salary_min": 166000,
+    "salary_max": 220000,
+    "work_arrangement": null,
+    "minimum_years_experience": 3,
+    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5009240007?gh_jid=5009240007",
+    "evaluated_at": "2026-09-07T06:33:36.730311+00:00",
+    "match_score": 88,
+    "recommendation": "SKIP",
+    "matched_skills": [
+      "Go",
+      "C++",
+      "AWS"
+    ],
+    "missing_skills": [],
+    "hard_filter_failures": [
+      "Role specialization does not match target roles"
+    ],
+    "breakdown": {
+      "technical_skills": 100,
+      "role_fit": 60,
+      "seniority": 90,
+      "location": 100,
+      "salary": 100,
+      "sponsorship": 60,
+      "company": 70
+    }
+  },
+  {
     "job_id": "greenhouse-andurilindustries-5152584007",
     "title": "Senior Software Engineer, Nix",
     "company": "Anduril",
@@ -719,8 +728,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5152584007?gh_jid=5152584007",
-    "evaluated_at": "2026-09-07T06:27:57.601130+00:00",
-    "match_score": 84,
+    "evaluated_at": "2026-09-07T06:33:36.729717+00:00",
+    "match_score": 87,
     "recommendation": "SKIP",
     "matched_skills": [
       "Python",
@@ -752,8 +761,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5206580007?gh_jid=5206580007",
-    "evaluated_at": "2026-09-07T06:27:57.601277+00:00",
-    "match_score": 84,
+    "evaluated_at": "2026-09-07T06:33:36.730024+00:00",
+    "match_score": 87,
     "recommendation": "SKIP",
     "matched_skills": [
       "Python",
@@ -786,8 +795,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5117558007?gh_jid=5117558007",
-    "evaluated_at": "2026-09-07T06:27:57.601359+00:00",
-    "match_score": 84,
+    "evaluated_at": "2026-09-07T06:33:36.730174+00:00",
+    "match_score": 87,
     "recommendation": "SKIP",
     "matched_skills": [
       "Java",
@@ -818,8 +827,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5125189007?gh_jid=5125189007",
-    "evaluated_at": "2026-09-07T06:27:57.600156+00:00",
-    "match_score": 82,
+    "evaluated_at": "2026-09-07T06:33:36.725596+00:00",
+    "match_score": 86,
     "recommendation": "SKIP",
     "matched_skills": [
       "Go",
@@ -850,8 +859,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/4673932007?gh_jid=4673932007",
-    "evaluated_at": "2026-09-07T06:27:57.600437+00:00",
-    "match_score": 82,
+    "evaluated_at": "2026-09-07T06:33:36.727238+00:00",
+    "match_score": 86,
     "recommendation": "SKIP",
     "matched_skills": [
       "Go",
@@ -882,44 +891,12 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/4800373007?gh_jid=4800373007",
-    "evaluated_at": "2026-09-07T06:27:57.600505+00:00",
-    "match_score": 82,
+    "evaluated_at": "2026-09-07T06:33:36.727372+00:00",
+    "match_score": 86,
     "recommendation": "SKIP",
     "matched_skills": [
       "Java",
       "Python",
-      "Go",
-      "C++",
-      "AWS"
-    ],
-    "missing_skills": [],
-    "hard_filter_failures": [
-      "Role specialization does not match target roles"
-    ],
-    "breakdown": {
-      "technical_skills": 100,
-      "role_fit": 60,
-      "seniority": 90,
-      "location": 100,
-      "salary": 100,
-      "sponsorship": 60,
-      "company": 70
-    }
-  },
-  {
-    "job_id": "greenhouse-andurilindustries-5009240007",
-    "title": "Software Engineer, C++",
-    "company": "Anduril",
-    "location": "Bellevue, Washington, United States",
-    "salary_min": 166000,
-    "salary_max": 220000,
-    "work_arrangement": null,
-    "minimum_years_experience": null,
-    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5009240007?gh_jid=5009240007",
-    "evaluated_at": "2026-09-07T06:27:57.601427+00:00",
-    "match_score": 82,
-    "recommendation": "SKIP",
-    "matched_skills": [
       "Go",
       "C++",
       "AWS"
@@ -946,10 +923,10 @@
     "salary_min": 166000,
     "salary_max": 220000,
     "work_arrangement": null,
-    "minimum_years_experience": null,
+    "minimum_years_experience": 6,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5228337007?gh_jid=5228337007",
-    "evaluated_at": "2026-09-07T06:27:57.601839+00:00",
-    "match_score": 82,
+    "evaluated_at": "2026-09-07T06:33:36.731625+00:00",
+    "match_score": 86,
     "recommendation": "SKIP",
     "matched_skills": [
       "Java",
@@ -974,22 +951,25 @@
     }
   },
   {
-    "job_id": "greenhouse-andurilindustries-5161503007",
-    "title": "Senior Software Engineer, Manufacturing Test",
+    "job_id": "greenhouse-andurilindustries-5131066007",
+    "title": "Software Engineer, Geospatial Platform (Terra)",
     "company": "Anduril",
-    "location": "Bellevue, Washington, United States",
-    "salary_min": 191000,
-    "salary_max": 253000,
+    "location": "Seattle, Washington, United States",
+    "salary_min": 166000,
+    "salary_max": 220000,
     "work_arrangement": null,
     "minimum_years_experience": null,
-    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5161503007?gh_jid=5161503007",
-    "evaluated_at": "2026-09-07T06:27:57.601063+00:00",
-    "match_score": 80,
+    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5131066007?gh_jid=5131066007",
+    "evaluated_at": "2026-09-07T06:33:36.731812+00:00",
+    "match_score": 86,
     "recommendation": "SKIP",
     "matched_skills": [
+      "Java",
       "Python",
+      "Go",
+      "C++",
       "AWS",
-      "RESTful APIs"
+      "Kubernetes"
     ],
     "missing_skills": [],
     "hard_filter_failures": [
@@ -997,8 +977,8 @@
     ],
     "breakdown": {
       "technical_skills": 100,
-      "role_fit": 40,
-      "seniority": 100,
+      "role_fit": 60,
+      "seniority": 90,
       "location": 100,
       "salary": 100,
       "sponsorship": 60,
@@ -1013,10 +993,10 @@
     "salary_min": 166000,
     "salary_max": 220000,
     "work_arrangement": null,
-    "minimum_years_experience": null,
+    "minimum_years_experience": 5,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5161517007?gh_jid=5161517007",
-    "evaluated_at": "2026-09-07T06:27:57.601976+00:00",
-    "match_score": 78,
+    "evaluated_at": "2026-09-07T06:33:36.732862+00:00",
+    "match_score": 84,
     "recommendation": "SKIP",
     "matched_skills": [
       "Python",
@@ -1031,6 +1011,39 @@
       "technical_skills": 100,
       "role_fit": 40,
       "seniority": 90,
+      "location": 100,
+      "salary": 100,
+      "sponsorship": 60,
+      "company": 70
+    }
+  },
+  {
+    "job_id": "greenhouse-andurilindustries-5161503007",
+    "title": "Senior Software Engineer, Manufacturing Test",
+    "company": "Anduril",
+    "location": "Bellevue, Washington, United States",
+    "salary_min": 191000,
+    "salary_max": 253000,
+    "work_arrangement": null,
+    "minimum_years_experience": 8,
+    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5161503007?gh_jid=5161503007",
+    "evaluated_at": "2026-09-07T06:33:36.729520+00:00",
+    "match_score": 81,
+    "recommendation": "SKIP",
+    "matched_skills": [
+      "Python",
+      "AWS",
+      "RESTful APIs"
+    ],
+    "missing_skills": [],
+    "hard_filter_failures": [
+      "Role specialization does not match target roles",
+      "Experience requirement is significantly above candidate experience"
+    ],
+    "breakdown": {
+      "technical_skills": 100,
+      "role_fit": 40,
+      "seniority": 100,
       "location": 100,
       "salary": 100,
       "sponsorship": 60,

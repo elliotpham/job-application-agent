@@ -6,6 +6,10 @@ import requests
 from app.greenhouse_collector import collect_greenhouse_jobs
 from app.job_normalizer import normalize_jobs
 from app.matcher import calculate_match
+from app.application_tracker import (
+    record_job,
+    get_job_status,
+)
 
 
 PROFILE_FILE = "candidate/profile.json"
@@ -67,6 +71,17 @@ def run_greenhouse_pipeline() -> list[dict]:
     for job in normalized_jobs:
         match = calculate_match(job, profile)
 
+        # Persist this job in our application history.
+        record_job(
+            job=job,
+            recommendation=match["recommendation"],
+            match_score=match["match_score"]
+        )
+
+        application_status = get_job_status(
+            job["id"]
+        )
+
         result = {
             "job_id": job.get("id"),
             "title": job.get("title"),
@@ -81,6 +96,7 @@ def run_greenhouse_pipeline() -> list[dict]:
                 "minimum_years_experience"
             ),
             "apply_url": job.get("apply_url"),
+            "application_status": application_status,
             "evaluated_at": datetime.now(
                 timezone.utc
             ).isoformat(),
@@ -118,6 +134,9 @@ if __name__ == "__main__":
             f"{result['company']} | "
             f"{result['location']}"
         )
+
+        if result.get("application_status") == "APPLIED":
+            print("Status: Already applied")
 
         if result["hard_filter_failures"]:
             print(

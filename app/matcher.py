@@ -128,7 +128,6 @@ def calculate_skill_score(job: dict, profile: dict):
 def calculate_role_score(job: dict, profile: dict) -> int:
     title = (job.get("title") or "").lower().strip()
 
-    # Clearly outside the user's target specialization.
     mismatch_keywords = [
         "manufacturing test",
         "test automation",
@@ -150,7 +149,7 @@ def calculate_role_score(job: dict, profile: dict) -> int:
     if any(keyword in title for keyword in mismatch_keywords):
         return 40
 
-    # Best matches.
+    # Strong backend/Java matches get priority.
     strong_target_keywords = [
         "backend",
         "java",
@@ -159,12 +158,27 @@ def calculate_role_score(job: dict, profile: dict) -> int:
     if any(keyword in title for keyword in strong_target_keywords):
         return 100
 
-    # Very relevant adjacent backend/infrastructure roles.
+    # Specialized roles should be checked BEFORE generic words
+    # such as "platform".
+    specialized_keywords = [
+        "c++",
+        "mission software",
+        "nix",
+        "video",
+        "warfighter",
+        "simulation",
+        "geospatial",
+        "factory automation",
+    ]
+
+    if any(keyword in title for keyword in specialized_keywords):
+        return 60
+
     adjacent_keywords = [
         "platform",
         "api",
         "sdk",
-        "distributed",
+        "distributed networks",
         "cloud",
         "infrastructure",
         "microservice",
@@ -173,8 +187,6 @@ def calculate_role_score(job: dict, profile: dict) -> int:
     if any(keyword in title for keyword in adjacent_keywords):
         return 95
 
-    # General SWE is still one of your target roles,
-    # but less specific than Java/backend.
     general_keywords = [
         "software engineer",
         "software developer",
@@ -380,6 +392,11 @@ def calculate_match(job: dict, profile: dict) -> dict:
     )
 
     hard_filter_failures = []
+
+    if role_score < 70:
+        hard_filter_failures.append(
+            "Role specialization does not match target roles"
+        )
 
     if (
         requires_active_clearance(job)

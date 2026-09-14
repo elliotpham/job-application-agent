@@ -1,5 +1,8 @@
 import re
 
+from app.question_memory import (
+    get_saved_answer,
+)
 
 def normalize_label(label: str) -> str:
     return re.sub(
@@ -11,7 +14,8 @@ def normalize_label(label: str) -> str:
 
 def resolve_question(
     question: dict,
-    profile: dict
+    profile: dict,
+    company: str
 ) -> dict:
     label = normalize_label(
         question.get("label", "")
@@ -129,6 +133,26 @@ def resolve_question(
                 "No"
             )
 
+    saved = get_saved_answer(
+        question,
+        company
+    )
+
+    if saved:
+        saved_answer = saved.get("answer")
+
+        if field_type == "multi_value_single_select":
+            return select_answer(
+                field,
+                saved_answer
+            )
+
+        return {
+            "status": "ANSWERED",
+            "answer": saved_answer,
+            "source": "question_memory",
+        }
+
     # Do NOT guess these.
     manual_keywords = [
         "clearance",
@@ -183,7 +207,8 @@ def select_answer(
 
 def resolve_questions(
     questions: list[dict],
-    profile: dict
+    profile: dict,
+    company: str
 ) -> list[dict]:
     resolved = []
 

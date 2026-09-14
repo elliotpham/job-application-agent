@@ -58,7 +58,8 @@ def inspect_job(job: dict):
 
     resolved = resolve_questions(
         questions,
-        profile
+        profile,
+        job["company"]
     )
 
     print(

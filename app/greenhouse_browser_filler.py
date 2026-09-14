@@ -41,6 +41,116 @@ def find_field(page, field_name: str, label: str):
     return None
 
 
+def fill_location_city(
+    page,
+    city: str,
+    state: str | None = None
+):
+    print(
+        f"Filling Location (City): "
+        f"{city}, {state or ''}"
+    )
+
+    location = page.get_by_label(
+        "Location (City)",
+        exact=False
+    )
+
+    if location.count() == 0:
+        raise RuntimeError(
+            "Could not locate Location (City) field"
+        )
+
+    location = location.first
+
+    # Clear anything currently in the autocomplete.
+    location.fill("")
+
+    # Type instead of fill so the autocomplete's
+    # JavaScript receives keyboard/input events.
+    location.type(
+        city,
+        delay=100
+    )
+
+    # Give Greenhouse time to load suggestions.
+    page.wait_for_timeout(1500)
+
+    # Preferred approach:
+    # locate an autocomplete option containing both
+    # the city and state.
+    suggestions = page.locator(
+        '[role="option"]'
+    )
+
+    for i in range(suggestions.count()):
+        suggestion = suggestions.nth(i)
+
+        try:
+            text = suggestion.inner_text().strip()
+
+            city_matches = (
+                city.lower()
+                in text.lower()
+            )
+
+            state_matches = (
+                not state
+                or state.lower()
+                in text.lower()
+            )
+
+            if (
+                city_matches
+                and state_matches
+            ):
+                print(
+                    f"Selecting location: {text}"
+                )
+
+                suggestion.click()
+                return
+
+        except Exception:
+            continue
+
+    # Greenhouse variants do not always expose
+    # autocomplete items with role="option".
+    # Try visible text instead.
+    if state:
+        desired_text = (
+            f"{city}, {state}"
+        )
+
+        matching_text = page.get_by_text(
+            desired_text,
+            exact=False
+        )
+
+        if matching_text.count() > 0:
+            print(
+                f"Selecting location: "
+                f"{desired_text}"
+            )
+
+            matching_text.first.click()
+            return
+
+    # Final fallback:
+    # autocomplete widgets normally support
+    # keyboard selection.
+    print(
+        "Location suggestion not found by DOM. "
+        "Trying ArrowDown + Enter."
+    )
+
+    location.press("ArrowDown")
+    page.wait_for_timeout(300)
+    location.press("Enter")
+
+    page.wait_for_timeout(500)
+
+
 def fill_text(page, action: dict):
     field = find_field(
         page,
@@ -252,6 +362,13 @@ def fill_application(job: dict):
                 select_phone_country(
                     page,
                     action["value"]
+                )
+
+            elif action["action"] == "fill_location_city":
+                fill_location_city(
+                    page,
+                    action["city"],
+                    action.get("state")
                 )
 
         # IMPORTANT:

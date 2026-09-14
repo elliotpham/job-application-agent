@@ -131,6 +131,7 @@
 
   "has_active_security_clearance": null,
   "current_city": "Seattle",
+  "current_state": "Washington",
   "is_at_least_18": true,
   "can_provide_work_authorization_documents": true
 }

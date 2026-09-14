@@ -29,6 +29,9 @@ def build_submission_plan(job: dict) -> dict:
         "r"
     ) as file:
         profile = json.load(file)
+    
+    current_city = profile.get("current_city")
+    current_state = profile.get("current_state")
 
     resolved = resolve_questions(
         questions,
@@ -38,6 +41,19 @@ def build_submission_plan(job: dict) -> dict:
 
     actions = []
     unresolved = []
+
+    if current_city:
+        actions.append({
+            "action": "fill_location_city",
+            "label": "Location (City)",
+            "city": current_city,
+            "state": current_state,
+        })
+    else:
+        unresolved.append({
+            "label": "Location (City)",
+            "status": "NEEDS_INPUT",
+        })
 
     for question, resolution in zip(
         questions,

@@ -12,7 +12,10 @@ def get_ready_to_apply_jobs() -> list[dict]:
     ready_jobs = []
 
     for application in applications.values():
-        if application.get("status") == STATUS_READY_TO_APPLY:
+        if (
+            application.get("status") == STATUS_READY_TO_APPLY
+            and application.get("recommendation") == "APPLY"
+        ):
             ready_jobs.append(application)
 
     # Highest match score first.

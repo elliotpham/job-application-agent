@@ -10,6 +10,11 @@ from app.application_tracker import (
     record_job,
     get_job_status,
     mark_ready_to_apply,
+    mark_skipped,
+    STATUS_DISCOVERED,
+    STATUS_READY_TO_APPLY,
+    STATUS_APPLIED,
+    STATUS_SKIPPED,
 )
 
 
@@ -83,12 +88,34 @@ def run_greenhouse_pipeline() -> list[dict]:
             job["id"]
         )
 
-        if (
-            match["recommendation"] == "APPLY"
-            and application_status == "DISCOVERED"
-        ):
-            mark_ready_to_apply(job["id"])
-            application_status = "READY_TO_APPLY"
+        # Never rewrite a job that was already submitted.
+        if application_status != STATUS_APPLIED:
+
+            if (
+                match["recommendation"] == "APPLY"
+                and application_status in {
+                    STATUS_DISCOVERED,
+                    STATUS_SKIPPED,
+                }
+            ):
+                mark_ready_to_apply(
+                    job["id"]
+                )
+
+            elif (
+                match["recommendation"] == "SKIP"
+                and application_status in {
+                    STATUS_DISCOVERED,
+                    STATUS_READY_TO_APPLY,
+                }
+            ):
+                mark_skipped(
+                    job["id"]
+                )
+
+            application_status = get_job_status(
+                job["id"]
+            )
 
         result = {
             "job_id": job.get("id"),

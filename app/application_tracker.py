@@ -10,6 +10,17 @@ STATUS_READY_TO_APPLY = "READY_TO_APPLY"
 STATUS_APPLIED = "APPLIED"
 STATUS_FAILED = "FAILED"
 STATUS_NEEDS_INPUT = "NEEDS_INPUT"
+STATUS_SKIPPED = "SKIPPED"
+
+def mark_skipped(job_id: str):
+    applications = load_applications()
+
+    if job_id not in applications:
+        return
+
+    applications[job_id]["status"] = STATUS_SKIPPED
+
+    save_applications(applications)
 
 def load_applications() -> dict:
     if not os.path.exists(APPLICATIONS_FILE):

@@ -142,6 +142,24 @@ def resolve_question(
                 "No"
             )
 
+    if (
+        "clearance" in label
+        and (
+            "eligibility" in label
+            or "eligible" in label
+            or "obtain and maintain" in label
+        )
+    ):
+        eligible = profile.get(
+            "eligible_for_us_security_clearance"
+        )
+
+        if eligible is False:
+            return select_answer(
+                field,
+                "No"
+            )
+
     saved = get_saved_answer(
         question,
         company

@@ -4,6 +4,8 @@
   "last_name": "Name",
   "email": "your.email@example.com",
   "phone": "1234567890",
+  "phone_country": "United States",
+  "eligible_for_us_security_clearance": null,
   "linkedin_url": null,
   "resume_path": "candidate/resume.pdf",
 

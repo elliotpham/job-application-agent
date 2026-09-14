@@ -117,6 +117,18 @@ def build_submission_plan(job: dict) -> dict:
             })
 
         else:
+            if field.get("name") == "phone":
+                phone_country = profile.get(
+                    "phone_country",
+                    "United States"
+                )
+
+                actions.append({
+                    "action": "select_phone_country",
+                    "label": "Phone Country",
+                    "value": phone_country,
+                })
+
             actions.append({
                 "action": "fill",
                 "label": question.get("label"),

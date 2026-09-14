@@ -4,6 +4,8 @@
   "last_name": "Pham",
   "email": "phamtcua96@gmail.com",
   "phone": "2028737015",
+  "phone_country": "United States",
+  "eligible_for_us_security_clearance": false,
   "linkedin_url": null,
   "resume_path": "candidate/resume.pdf",
 

@@ -57,6 +57,27 @@ def requires_active_clearance(job: dict) -> bool:
         for phrase in clearance_phrases
     )
 
+def requires_clearance_eligibility(job: dict) -> bool:
+    title = (job.get("title") or "").lower()
+    description = (job.get("description") or "").lower()
+
+    text = f"{title} {description}"
+
+    phrases = [
+        "requires eligibility to obtain and maintain a u.s. security clearance",
+        "eligible to obtain and maintain a u.s. security clearance",
+        "must be eligible to obtain a u.s. security clearance",
+        "must be eligible to obtain and maintain",
+        "ability to obtain and maintain a u.s. security clearance",
+        "ability to obtain a security clearance",
+        "eligible for a u.s. security clearance",
+    ]
+
+    return any(
+        phrase in text
+        for phrase in phrases
+    )
+
 
 def calculate_skill_score(job: dict, profile: dict):
     candidate_skills = {
@@ -430,6 +451,16 @@ def calculate_match(job: dict, profile: dict) -> dict:
         and profile.get("has_active_security_clearance") is not True
     ):
         hard_filter_failures.append("Active security clearance required")
+
+    if (
+        requires_clearance_eligibility(job)
+        and profile.get(
+            "eligible_for_us_security_clearance"
+        ) is False
+    ):
+        hard_filter_failures.append(
+            "Position requires eligibility for a U.S. security clearance"
+        )
 
     if not location_pass:
         hard_filter_failures.append("Location does not match preferences")

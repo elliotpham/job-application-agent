@@ -3,6 +3,7 @@ import re
 from app.question_memory import (
     get_saved_answer,
 )
+from app.resume_handler import resolve_resume
 
 def normalize_label(label: str) -> str:
     return re.sub(
@@ -32,6 +33,14 @@ def resolve_question(
     field = fields[0]
     field_name = field.get("name")
     field_type = field.get("type")
+
+    # Resume/CV
+    if (
+        "resume" in label
+        or label == "cv"
+        or "resume/cv" in label
+    ):
+        return resolve_resume(profile)
 
     # Standard Greenhouse fields
     standard_answers = {

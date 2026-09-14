@@ -215,7 +215,8 @@ def resolve_questions(
     for question in questions:
         resolution = resolve_question(
             question,
-            profile
+            profile,
+            company
         )
 
         resolved.append({

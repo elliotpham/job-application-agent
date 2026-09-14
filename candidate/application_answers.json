@@ -1,4 +1,50 @@
 {
-  "global": {},
-  "companies": {}
+  "global": {
+    "security_clearance_eligibility": {
+      "answer": "No",
+      "updated_at": "2026-09-14T21:09:49.892325+00:00",
+      "aliases": [
+        "clearance eligibility this position requires eligibility to obtain and maintain a u s security clearance"
+      ]
+    },
+    "security_clearance_level": {
+      "answer": "N/A - have never held U.S. security clearance",
+      "updated_at": "2026-09-14T21:09:54.988228+00:00",
+      "aliases": [
+        "if you have held a u s security clearance in the past what clearance level have you held"
+      ]
+    },
+    "export_control_status": {
+      "answer": "None of the above",
+      "updated_at": "2026-09-14T21:10:15.601836+00:00",
+      "aliases": [
+        "export controls this position requires access to information and technology that is subject to u s export controls your responses to the questions below will be used solely to determine your eligibility under u s law to receive information and materials subject to u s export controls"
+      ]
+    }
+  },
+  "companies": {
+    "anduril": {
+      "previously_applied_to_company": {
+        "answer": "No",
+        "updated_at": "2026-09-14T21:10:21.718769+00:00",
+        "aliases": [
+          "history with anduril"
+        ]
+      },
+      "previously_employed_by_company": {
+        "answer": "No",
+        "updated_at": "2026-09-14T21:10:27.283646+00:00",
+        "aliases": [
+          "conflict of interest"
+        ]
+      },
+      "how_heard_about_company": {
+        "answer": "Anduril Website",
+        "updated_at": "2026-09-14T21:10:39.251458+00:00",
+        "aliases": [
+          "how did you hear about anduril"
+        ]
+      }
+    }
+  }
 }

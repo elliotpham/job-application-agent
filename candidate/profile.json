@@ -1,5 +1,10 @@
 {
   "name": "Tien Pham",
+  "first_name": "Tien",
+  "last_name": "Pham",
+  "email": "phamtcua96@gmail.com",
+  "phone": "2028737015",
+  "linkedin_url": null,
 
   "target_roles": [
     "Software Engineer",

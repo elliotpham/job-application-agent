@@ -3,6 +3,7 @@ import json
 import requests
 
 from app.application_executor import get_ready_to_apply_jobs
+from app.application_question_resolver import resolve_questions
 
 
 BASE_URL = "https://boards-api.greenhouse.io/v1/boards"
@@ -52,9 +53,17 @@ def inspect_job(job: dict):
         f"===== APPLICATION QUESTIONS ({len(questions)}) ====="
     )
 
+    with open("candidate/profile.json") as f:
+        profile = json.load(f)
+
+    resolved = resolve_questions(
+        questions,
+        profile
+    )
+
     print(
         json.dumps(
-            questions,
+            resolved,
             indent=2
         )
     )

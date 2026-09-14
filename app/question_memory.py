@@ -146,6 +146,32 @@ def canonicalize_question(
             "company"
         )
 
+    if (
+        "deemed export license" in text
+        or (
+            re.search(r"\bear\b", text)
+            and "export" in text
+        )
+    ):
+        return (
+            "deemed_export_license_eligibility",
+            "global"
+        )
+
+
+    if (
+        "contractual obligations" in text
+        or (
+            "agreements" in text
+            and "interfere" in text
+            and "ability to join" in text
+        )
+    ):
+        return (
+            "employment_restrictive_obligations",
+            "global"
+        )
+
     return None, None
 
 

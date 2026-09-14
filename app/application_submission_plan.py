@@ -125,7 +125,7 @@ def build_submission_plan(job: dict) -> dict:
 
                 actions.append({
                     "action": "select_phone_country",
-                    "label": "Phone Country",
+                    "label": "Country",
                     "value": phone_country,
                 })
 

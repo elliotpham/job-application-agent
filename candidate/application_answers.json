@@ -20,6 +20,20 @@
       "aliases": [
         "export controls this position requires access to information and technology that is subject to u s export controls your responses to the questions below will be used solely to determine your eligibility under u s law to receive information and materials subject to u s export controls"
       ]
+    },
+    "deemed_export_license_eligibility": {
+      "answer": "No",
+      "updated_at": "2026-09-14T23:21:43.982475+00:00",
+      "aliases": [
+        "based on the below information would you meet the requirements for a deemed export license in order to access ear controlled technology"
+      ]
+    },
+    "employment_restrictive_obligations": {
+      "answer": "No",
+      "updated_at": "2026-09-14T23:21:51.220906+00:00",
+      "aliases": [
+        "do you have any contractual obligations agreements relationships or commitments to another person or entity that would impact impede or interfere with your ability to join axon"
+      ]
     }
   },
   "companies": {
@@ -43,6 +57,15 @@
         "updated_at": "2026-09-14T21:10:39.251458+00:00",
         "aliases": [
           "how did you hear about anduril"
+        ]
+      }
+    },
+    "axon": {
+      "previously_employed_by_company": {
+        "answer": "No",
+        "updated_at": "2026-09-14T23:21:52.732825+00:00",
+        "aliases": [
+          "have you ever been employed by axon"
         ]
       }
     }

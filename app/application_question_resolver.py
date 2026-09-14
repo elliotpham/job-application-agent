@@ -160,6 +160,68 @@ def resolve_question(
                 "No"
             )
 
+
+    # Current city
+    if (
+        "what city do you currently reside in" in label
+        or "current city" in label
+        or "city do you reside" in label
+    ):
+        current_city = profile.get("current_city")
+
+        if current_city:
+            return {
+                "status": "ANSWERED",
+                "answer": current_city,
+            }
+
+
+    # Age
+    if (
+        "at least 18 years" in label
+        or "18 years of age" in label
+    ):
+        is_at_least_18 = profile.get(
+            "is_at_least_18"
+        )
+
+        if is_at_least_18 is True:
+            return select_answer(
+                field,
+                "Yes"
+            )
+
+        if is_at_least_18 is False:
+            return select_answer(
+                field,
+                "No"
+            )
+
+
+    # Ability to provide I-9 / work authorization documents
+    if (
+        "verification of both your identity" in label
+        or (
+            "authorization to work" in label
+            and "verification" in label
+        )
+    ):
+        can_provide_documents = profile.get(
+            "can_provide_work_authorization_documents"
+        )
+
+        if can_provide_documents is True:
+            return select_answer(
+                field,
+                "Yes"
+            )
+
+        if can_provide_documents is False:
+            return select_answer(
+                field,
+                "No"
+            )
+            
     saved = get_saved_answer(
         question,
         company

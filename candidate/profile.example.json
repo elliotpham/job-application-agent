@@ -68,8 +68,6 @@
     "requires_sponsorship_now_or_future": true
   },
 
-  "has_active_security_clearance": null,
-
   "application_strategy": {
     "minimum_match_score": 80,
     "automatically_submit": true,
@@ -86,5 +84,10 @@
     "avoid_hyphens_when_possible": true,
     "avoid_em_dashes": true,
     "avoid_generic_ai_phrases": true
-  }
+  },
+
+  "has_active_security_clearance": null,
+  "current_city": "Seattle",
+  "is_at_least_18": true,
+  "can_provide_work_authorization_documents": true
 }

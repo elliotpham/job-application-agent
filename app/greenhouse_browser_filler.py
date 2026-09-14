@@ -279,60 +279,113 @@ def select_phone_country(
     page,
     country: str
 ):
-    phone = page.locator(
-        '[name="phone"]'
+    print(
+        f"Selecting phone country: {country}"
     )
 
-    if phone.count() == 0:
-        raise RuntimeError(
-            "Could not locate phone input"
+    # Greenhouse's newer application form exposes
+    # Country as its own required control before Phone.
+    try:
+        country_control = page.get_by_label(
+            "Country",
+            exact=True
         )
 
-    phone = phone.first
+        if country_control.count() > 0:
+            country_control = country_control.first
 
-    # Find the closest container around the phone field
-    # that also contains a dropdown/combobox.
-    container = phone.locator(
-        "xpath=ancestor::div[.//*[@role='combobox']][1]"
-    )
+            country_control.click()
 
-    if container.count() > 0:
-        combobox = container.get_by_role(
-            "combobox"
-        )
-
-        if combobox.count() > 0:
-            combobox.first.click()
-
-            page.get_by_role(
+            option = page.get_by_role(
                 "option",
                 name=country,
                 exact=False
-            ).first.click()
+            )
 
-            return
+            if option.count() > 0:
+                option.first.click()
+                return
 
-    # Fallback for Greenhouse variants where the
-    # country selector is exposed globally by label.
-    country_select = page.get_by_role(
-        "combobox",
-        name="Country",
-        exact=False
+    except Exception:
+        pass
+
+    # Some Greenhouse forms use a React-style custom
+    # dropdown whose input is associated with the
+    # visible Country text rather than a normal label.
+    try:
+        country_text = page.get_by_text(
+            "Country",
+            exact=True
+        ).first
+
+        container = country_text.locator(
+            "xpath=following::*[@role='combobox'][1]"
+        )
+
+        if container.count() > 0:
+            container.first.click()
+
+            option = page.get_by_role(
+                "option",
+                name=country,
+                exact=False
+            )
+
+            if option.count() > 0:
+                option.first.click()
+                return
+
+    except Exception:
+        pass
+
+    # Final fallback: inspect all comboboxes and choose
+    # the first one appearing before the Phone field.
+    comboboxes = page.get_by_role(
+        "combobox"
     )
 
-    if country_select.count() > 0:
-        country_select.first.click()
+    if comboboxes.count() > 0:
+        for i in range(comboboxes.count()):
+            combo = comboboxes.nth(i)
 
-        page.get_by_role(
-            "option",
-            name=country,
-            exact=False
-        ).first.click()
+            try:
+                aria_label = (
+                    combo.get_attribute("aria-label")
+                    or ""
+                ).lower()
 
-        return
+                name = (
+                    combo.get_attribute("name")
+                    or ""
+                ).lower()
+
+                element_id = (
+                    combo.get_attribute("id")
+                    or ""
+                ).lower()
+
+                if (
+                    "country" in aria_label
+                    or "country" in name
+                    or "country" in element_id
+                ):
+                    combo.click()
+
+                    option = page.get_by_role(
+                        "option",
+                        name=country,
+                        exact=False
+                    )
+
+                    if option.count() > 0:
+                        option.first.click()
+                        return
+
+            except Exception:
+                continue
 
     raise RuntimeError(
-        "Could not locate phone country selector"
+        "Could not locate Country selector"
     )
 
 

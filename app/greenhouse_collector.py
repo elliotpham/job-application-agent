@@ -138,6 +138,8 @@ def collect_greenhouse_jobs(
 
         jobs.append({
             "id": f"greenhouse-{board_token}-{job_id}",
+            "board_token": board_token,
+            "external_job_id": job_id,
             "title": details.get("title", "").strip(),
             "company": company_name,
             "description": description,

@@ -1,6 +1,8 @@
 def normalize_job(raw_job: dict) -> dict:
     return {
         "id": raw_job.get("id"),
+        "external_job_id": raw_job.get("external_job_id"),
+        "board_token": raw_job.get("board_token"),
         "title": raw_job.get("title", "").strip(),
         "company": raw_job.get("company", ""),
         "description": raw_job.get("description", ""),

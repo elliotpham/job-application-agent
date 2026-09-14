@@ -57,10 +57,15 @@ def record_job(
         existing["last_seen_at"] = now
         existing["match_score"] = match_score
         existing["recommendation"] = recommendation
+        existing["external_job_id"] = job.get("external_job_id")
+        existing["board_token"] = job.get("board_token")
+        existing["apply_url"] = job.get("apply_url")
 
     else:
         applications[job_id] = {
             "job_id": job_id,
+            "external_job_id": job.get("external_job_id"),
+            "board_token": job.get("board_token"),
             "title": job.get("title"),
             "company": job.get("company"),
             "location": job.get("location"),

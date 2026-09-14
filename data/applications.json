@@ -7,9 +7,9 @@
     "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7704335003",
     "match_score": 96,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.865463+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.735526+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.661276+00:00",
     "applied_at": null
   },
   "greenhouse-axon-7766519003": {
@@ -22,7 +22,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.866047+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.737848+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.664882+00:00",
     "applied_at": null
   },
   "greenhouse-axon-7576935003": {
@@ -33,9 +33,9 @@
     "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7576935003",
     "match_score": 96,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.866554+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.739660+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.665840+00:00",
     "applied_at": null
   },
   "greenhouse-axon-7576610003": {
@@ -46,9 +46,9 @@
     "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7576610003",
     "match_score": 96,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.867037+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.741830+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.667824+00:00",
     "applied_at": null
   },
   "greenhouse-axon-7566950003": {
@@ -61,7 +61,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.867507+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.743905+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.672306+00:00",
     "applied_at": null
   },
   "greenhouse-metropolis-7778312003": {
@@ -74,7 +74,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.868015+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.745641+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.673264+00:00",
     "applied_at": null
   },
   "greenhouse-metropolis-7746447003": {
@@ -85,9 +85,9 @@
     "apply_url": "https://job-boards.greenhouse.io/metropolis/jobs/7746447003",
     "match_score": 92,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.868508+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.747448+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.674238+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5125189007": {
@@ -100,7 +100,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.869049+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.749249+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.675980+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5160360007": {
@@ -111,9 +111,9 @@
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5160360007?gh_jid=5160360007",
     "match_score": 94,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.869583+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.751633+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.676939+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5160667007": {
@@ -126,7 +126,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.870130+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.753377+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.678646+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-4672848007": {
@@ -137,9 +137,9 @@
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/4672848007?gh_jid=4672848007",
     "match_score": 96,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.870768+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.755053+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.679625+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-4673932007": {
@@ -152,7 +152,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.871325+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.757005+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.681248+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-4800373007": {
@@ -165,7 +165,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.872043+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.758968+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.682201+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5195030007": {
@@ -176,9 +176,9 @@
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5195030007?gh_jid=5195030007",
     "match_score": 96,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.872660+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.760539+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.683182+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5185971007": {
@@ -189,9 +189,9 @@
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5185971007?gh_jid=5185971007",
     "match_score": 96,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.873793+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.762113+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.684867+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5181986007": {
@@ -204,7 +204,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.874936+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.763622+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.686559+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5188525007": {
@@ -215,9 +215,9 @@
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5188525007?gh_jid=5188525007",
     "match_score": 95,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.875877+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.764655+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.687495+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5201924007": {
@@ -228,9 +228,9 @@
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5201924007?gh_jid=5201924007",
     "match_score": 98,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.876529+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.765655+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.689178+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5152747007": {
@@ -243,7 +243,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.877209+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.766650+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.691057+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5161503007": {
@@ -256,7 +256,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.877896+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.767646+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.692035+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5152584007": {
@@ -269,7 +269,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.878566+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.768652+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.692987+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5133681007": {
@@ -282,7 +282,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.879305+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.769707+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.693957+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5206580007": {
@@ -295,7 +295,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.880028+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.770704+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.694903+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5117558007": {
@@ -308,7 +308,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.880829+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.771712+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.695871+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5009240007": {
@@ -321,7 +321,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.881575+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.772661+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.696854+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5130646007": {
@@ -332,9 +332,9 @@
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5130646007?gh_jid=5130646007",
     "match_score": 95,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.882387+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.773761+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.697835+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5161486007": {
@@ -345,9 +345,9 @@
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5161486007?gh_jid=5161486007",
     "match_score": 94,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.883224+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.776805+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.699487+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-4263030007": {
@@ -360,7 +360,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.884013+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.777967+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.701176+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-4980592007": {
@@ -371,9 +371,9 @@
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/4980592007?gh_jid=4980592007",
     "match_score": 94,
     "recommendation": "APPLY",
-    "status": "DISCOVERED",
+    "status": "READY_TO_APPLY",
     "first_seen_at": "2026-09-07T06:49:24.884835+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.779202+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.702148+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5228337007": {
@@ -386,7 +386,7 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.885654+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.780668+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.703879+00:00",
     "applied_at": null
   },
   "greenhouse-andurilindustries-5131066007": {
@@ -399,7 +399,7 @@
     "recommendation": "SKIP",
     "status": "APPLIED",
     "first_seen_at": "2026-09-07T06:49:24.886504+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.782438+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.704856+00:00",
     "applied_at": "2026-09-07T06:52:25.794978+00:00"
   },
   "greenhouse-andurilindustries-5161517007": {
@@ -412,7 +412,46 @@
     "recommendation": "SKIP",
     "status": "DISCOVERED",
     "first_seen_at": "2026-09-07T06:49:24.887376+00:00",
-    "last_seen_at": "2026-09-07T06:59:49.783859+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.705825+00:00",
+    "applied_at": null
+  },
+  "greenhouse-axon-7810796003": {
+    "job_id": "greenhouse-axon-7810796003",
+    "title": "Senior Software Engineer I, Applied AI",
+    "company": "Axon",
+    "location": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; San Francisco, California, United States; Scottsdale, Arizona, United States; Seattle, Washington, United States",
+    "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7810796003",
+    "match_score": 96,
+    "recommendation": "APPLY",
+    "status": "READY_TO_APPLY",
+    "first_seen_at": "2026-09-14T05:01:23.663185+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.663185+00:00",
+    "applied_at": null
+  },
+  "greenhouse-axon-7624082003": {
+    "job_id": "greenhouse-axon-7624082003",
+    "title": "Sr. Software Engineer I",
+    "company": "Axon",
+    "location": "Washington, United States",
+    "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7624082003",
+    "match_score": 95,
+    "recommendation": "APPLY",
+    "status": "READY_TO_APPLY",
+    "first_seen_at": "2026-09-14T05:01:23.670394+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.670394+00:00",
+    "applied_at": null
+  },
+  "greenhouse-andurilindustries-5234791007": {
+    "job_id": "greenhouse-andurilindustries-5234791007",
+    "title": "Software Engineer, Strategic Defense",
+    "company": "Anduril",
+    "location": "Seattle, Washington, United States",
+    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5234791007?gh_jid=5234791007",
+    "match_score": 96,
+    "recommendation": "APPLY",
+    "status": "READY_TO_APPLY",
+    "first_seen_at": "2026-09-14T05:01:23.706786+00:00",
+    "last_seen_at": "2026-09-14T05:01:23.706786+00:00",
     "applied_at": null
   }
 }

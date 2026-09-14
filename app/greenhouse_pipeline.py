@@ -9,6 +9,7 @@ from app.matcher import calculate_match
 from app.application_tracker import (
     record_job,
     get_job_status,
+    mark_ready_to_apply,
 )
 
 
@@ -81,6 +82,13 @@ def run_greenhouse_pipeline() -> list[dict]:
         application_status = get_job_status(
             job["id"]
         )
+
+        if (
+            match["recommendation"] == "APPLY"
+            and application_status == "DISCOVERED"
+        ):
+            mark_ready_to_apply(job["id"])
+            application_status = "READY_TO_APPLY"
 
         result = {
             "job_id": job.get("id"),

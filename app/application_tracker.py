@@ -5,6 +5,11 @@ from datetime import datetime, timezone
 
 APPLICATIONS_FILE = "data/applications.json"
 
+STATUS_DISCOVERED = "DISCOVERED"
+STATUS_READY_TO_APPLY = "READY_TO_APPLY"
+STATUS_APPLIED = "APPLIED"
+STATUS_FAILED = "FAILED"
+STATUS_NEEDS_INPUT = "NEEDS_INPUT"
 
 def load_applications() -> dict:
     if not os.path.exists(APPLICATIONS_FILE):
@@ -62,7 +67,7 @@ def record_job(
             "apply_url": job.get("apply_url"),
             "match_score": match_score,
             "recommendation": recommendation,
-            "status": "DISCOVERED",
+            "status": STATUS_DISCOVERED,
             "first_seen_at": now,
             "last_seen_at": now,
             "applied_at": None
@@ -77,7 +82,7 @@ def mark_applied(job_id: str):
     if job_id not in applications:
         return
 
-    applications[job_id]["status"] = "APPLIED"
+    applications[job_id]["status"] = STATUS_APPLIED
     applications[job_id]["applied_at"] = datetime.now(
         timezone.utc
     ).isoformat()
@@ -91,3 +96,32 @@ def get_job_status(job_id: str) -> str | None:
         return None
 
     return application.get("status")
+
+def mark_ready_to_apply(job_id: str):
+    applications = load_applications()
+
+    if job_id not in applications:
+        return
+
+    applications[job_id]["status"] = STATUS_READY_TO_APPLY
+    save_applications(applications)
+
+
+def mark_needs_input(job_id: str):
+    applications = load_applications()
+
+    if job_id not in applications:
+        return
+
+    applications[job_id]["status"] = STATUS_NEEDS_INPUT
+    save_applications(applications)
+
+
+def mark_failed(job_id: str):
+    applications = load_applications()
+
+    if job_id not in applications:
+        return
+
+    applications[job_id]["status"] = STATUS_FAILED
+    save_applications(applications)

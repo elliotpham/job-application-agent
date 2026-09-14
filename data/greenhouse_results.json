@@ -9,8 +9,8 @@
     "work_arrangement": null,
     "minimum_years_experience": 5,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5201924007?gh_jid=5201924007",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.766435+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.690684+00:00",
     "match_score": 98,
     "recommendation": "APPLY",
     "matched_skills": [
@@ -41,14 +41,49 @@
     "work_arrangement": null,
     "minimum_years_experience": 6,
     "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7704335003",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.737392+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.662869+00:00",
     "match_score": 96,
     "recommendation": "APPLY",
     "matched_skills": [
       "Java",
       "Go",
       "AWS"
+    ],
+    "missing_skills": [],
+    "hard_filter_failures": [],
+    "breakdown": {
+      "technical_skills": 100,
+      "role_fit": 90,
+      "seniority": 100,
+      "location": 100,
+      "salary": 100,
+      "sponsorship": 100,
+      "company": 70
+    }
+  },
+  {
+    "job_id": "greenhouse-axon-7810796003",
+    "title": "Senior Software Engineer I, Applied AI",
+    "company": "Axon",
+    "location": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; San Francisco, California, United States; Scottsdale, Arizona, United States; Seattle, Washington, United States",
+    "salary_min": 162150,
+    "salary_max": 259440,
+    "work_arrangement": null,
+    "minimum_years_experience": 4,
+    "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7810796003",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.664606+00:00",
+    "match_score": 96,
+    "recommendation": "APPLY",
+    "matched_skills": [
+      "Java",
+      "Python",
+      "Go",
+      "AWS",
+      "GCP",
+      "Docker",
+      "Kubernetes"
     ],
     "missing_skills": [],
     "hard_filter_failures": [],
@@ -72,8 +107,8 @@
     "work_arrangement": null,
     "minimum_years_experience": 6,
     "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7576935003",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.741390+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.667432+00:00",
     "match_score": 96,
     "recommendation": "APPLY",
     "matched_skills": [
@@ -103,8 +138,8 @@
     "work_arrangement": null,
     "minimum_years_experience": 6,
     "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7576610003",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.743450+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.670011+00:00",
     "match_score": 96,
     "recommendation": "APPLY",
     "matched_skills": [
@@ -135,7 +170,7 @@
     "minimum_years_experience": 5,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5160667007?gh_jid=5160667007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.754644+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.679362+00:00",
     "match_score": 96,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -168,8 +203,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/4672848007?gh_jid=4672848007",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.756599+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.680987+00:00",
     "match_score": 96,
     "recommendation": "APPLY",
     "matched_skills": [
@@ -201,8 +236,8 @@
     "work_arrangement": null,
     "minimum_years_experience": 5,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5195030007?gh_jid=5195030007",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.761737+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.684598+00:00",
     "match_score": 96,
     "recommendation": "APPLY",
     "matched_skills": [
@@ -231,8 +266,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5185971007?gh_jid=5185971007",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.763278+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.686252+00:00",
     "match_score": 96,
     "recommendation": "APPLY",
     "matched_skills": [
@@ -256,6 +291,70 @@
     }
   },
   {
+    "job_id": "greenhouse-andurilindustries-5234791007",
+    "title": "Software Engineer, Strategic Defense",
+    "company": "Anduril",
+    "location": "Seattle, Washington, United States",
+    "salary_min": 166000,
+    "salary_max": 220000,
+    "work_arrangement": null,
+    "minimum_years_experience": 4,
+    "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5234791007?gh_jid=5234791007",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.708218+00:00",
+    "match_score": 96,
+    "recommendation": "APPLY",
+    "matched_skills": [
+      "Python",
+      "Go",
+      "AWS"
+    ],
+    "missing_skills": [],
+    "hard_filter_failures": [],
+    "breakdown": {
+      "technical_skills": 100,
+      "role_fit": 90,
+      "seniority": 90,
+      "location": 100,
+      "salary": 100,
+      "sponsorship": 100,
+      "company": 70
+    }
+  },
+  {
+    "job_id": "greenhouse-axon-7624082003",
+    "title": "Sr. Software Engineer I",
+    "company": "Axon",
+    "location": "Washington, United States",
+    "salary_min": 120750,
+    "salary_max": 193200,
+    "work_arrangement": null,
+    "minimum_years_experience": null,
+    "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7624082003",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.672026+00:00",
+    "match_score": 95,
+    "recommendation": "APPLY",
+    "matched_skills": [
+      "Java",
+      "Python",
+      "Go",
+      "AWS",
+      "Kubernetes"
+    ],
+    "missing_skills": [],
+    "hard_filter_failures": [],
+    "breakdown": {
+      "technical_skills": 100,
+      "role_fit": 90,
+      "seniority": 100,
+      "location": 100,
+      "salary": 100,
+      "sponsorship": 100,
+      "company": 70
+    }
+  },
+  {
     "job_id": "greenhouse-andurilindustries-5188525007",
     "title": "Senior Software Engineer, Discovery",
     "company": "Anduril",
@@ -265,8 +364,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5188525007?gh_jid=5188525007",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.765437+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.688907+00:00",
     "match_score": 95,
     "recommendation": "APPLY",
     "matched_skills": [
@@ -298,8 +397,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5130646007?gh_jid=5130646007",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.774474+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.699226+00:00",
     "match_score": 95,
     "recommendation": "APPLY",
     "matched_skills": [
@@ -332,8 +431,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5160360007?gh_jid=5160360007",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.753072+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.678347+00:00",
     "match_score": 94,
     "recommendation": "APPLY",
     "matched_skills": [
@@ -366,7 +465,7 @@
     "minimum_years_experience": 8,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5181986007?gh_jid=5181986007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.764433+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.687267+00:00",
     "match_score": 94,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -405,8 +504,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5161486007?gh_jid=5161486007",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.777597+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.700932+00:00",
     "match_score": 94,
     "recommendation": "APPLY",
     "matched_skills": [
@@ -439,7 +538,7 @@
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/4263030007?gh_jid=4263030007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.778823+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.701917+00:00",
     "match_score": 94,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -473,8 +572,8 @@
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/4980592007?gh_jid=4980592007",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.780279+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.703596+00:00",
     "match_score": 94,
     "recommendation": "APPLY",
     "matched_skills": [
@@ -507,7 +606,7 @@
     "minimum_years_experience": 8,
     "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7766519003",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.739285+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.665611+00:00",
     "match_score": 93,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -542,7 +641,7 @@
     "minimum_years_experience": 8,
     "apply_url": "https://job-boards.greenhouse.io/axon/jobs/7566950003",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.745312+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.673051+00:00",
     "match_score": 93,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -578,7 +677,7 @@
     "minimum_years_experience": 10,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5133681007?gh_jid=5133681007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.770476+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.694689+00:00",
     "match_score": 93,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -613,8 +712,8 @@
     "work_arrangement": "onsite",
     "minimum_years_experience": 6,
     "apply_url": "https://job-boards.greenhouse.io/metropolis/jobs/7746447003",
-    "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.748878+00:00",
+    "application_status": "READY_TO_APPLY",
+    "evaluated_at": "2026-09-14T05:01:23.675706+00:00",
     "match_score": 92,
     "recommendation": "APPLY",
     "matched_skills": [
@@ -648,7 +747,7 @@
     "minimum_years_experience": 8,
     "apply_url": "https://job-boards.greenhouse.io/metropolis/jobs/7778312003",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.747066+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.674012+00:00",
     "match_score": 91,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -685,7 +784,7 @@
     "minimum_years_experience": 5,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5152747007?gh_jid=5152747007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.767439+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.691816+00:00",
     "match_score": 90,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -718,7 +817,7 @@
     "minimum_years_experience": 3,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5009240007?gh_jid=5009240007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.773444+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.697597+00:00",
     "match_score": 90,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -744,14 +843,14 @@
     "job_id": "greenhouse-andurilindustries-5152584007",
     "title": "Senior Software Engineer, Nix",
     "company": "Anduril",
-    "location": "Remote",
+    "location": "Seattle, Washington, United States",
     "salary_min": 191000,
     "salary_max": 253000,
     "work_arrangement": null,
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5152584007?gh_jid=5152584007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.769458+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.693719+00:00",
     "match_score": 89,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -785,7 +884,7 @@
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5206580007?gh_jid=5206580007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.771471+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.695635+00:00",
     "match_score": 89,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -820,7 +919,7 @@
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5117558007?gh_jid=5117558007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.772455+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.696630+00:00",
     "match_score": 89,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -853,7 +952,7 @@
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5125189007?gh_jid=5125189007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.751042+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.676710+00:00",
     "match_score": 88,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -886,7 +985,7 @@
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/4673932007?gh_jid=4673932007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.758568+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.681981+00:00",
     "match_score": 88,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -919,7 +1018,7 @@
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/4800373007?gh_jid=4800373007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.760120+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.682954+00:00",
     "match_score": 88,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -954,7 +1053,7 @@
     "minimum_years_experience": 6,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5228337007?gh_jid=5228337007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.782078+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.704623+00:00",
     "match_score": 88,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -990,7 +1089,7 @@
     "minimum_years_experience": null,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5131066007?gh_jid=5131066007",
     "application_status": "APPLIED",
-    "evaluated_at": "2026-09-07T06:59:49.783605+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.705599+00:00",
     "match_score": 88,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -1026,7 +1125,7 @@
     "minimum_years_experience": 5,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5161517007?gh_jid=5161517007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.784621+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.706562+00:00",
     "match_score": 86,
     "recommendation": "SKIP",
     "matched_skills": [
@@ -1059,7 +1158,7 @@
     "minimum_years_experience": 8,
     "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5161503007?gh_jid=5161503007",
     "application_status": "DISCOVERED",
-    "evaluated_at": "2026-09-07T06:59:49.768443+00:00",
+    "evaluated_at": "2026-09-14T05:01:23.692776+00:00",
     "match_score": 83,
     "recommendation": "SKIP",
     "matched_skills": [
